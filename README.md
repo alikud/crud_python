@@ -3,11 +3,21 @@
 
 
 ### Запуск приложения
-1. Создать виртуальное окружение и установить зависимости
+1. Создать виртуальное окружение и установить зависимости, так же создать .env файл
    ```
    python3 -m venv env
    source env/bin/activate
    pip install -r requirements.txt
+   touch .env
+   ```
+   Пример содержимого .env файла
+   ```
+   POSTGRES_USER=myuser
+   POSTGRES_PASSWORD=mypassword
+   POSTGRES_DB=mydatabase
+   ```
+
+   
 3. Вызвать в терминале `python3 src/main.py` или make serv
 
 
