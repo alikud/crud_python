@@ -1,18 +1,15 @@
 ## О проекте
-[Видео о луковой архитектуре](https://www.youtube.com/watch?v=8Im74b55vFc)  
-Видео о паттерне Unit of work (в процессе)
+Приложение реализует CRUD для библиотеки, можно добавить книгу, найти по названию, изменить и удалить. Так же можно добавить автора, связать с книгой, у автора может быть много книг, а у книг может быть много авторов (N:M). Использован фреймворк FastApi , база данных - PostgreSQL
 
 
 ### Запуск приложения
 1. Создать виртуальное окружение и установить зависимости
-2. Вызвать в терминале `python3 src/main.py`
-
-### Настройка Alembic для асинхронного драйвера
-1. Находясь в корневой директории, запустить  
-`alembic init -t async migrations`
-2. Перенести папку `migrations` внутрь папки `src`.
-3. Заменить `prepend_sys_path` на `. src` и `script_location` на `src/migrations` внутри `alembic.ini`
+   ```
+   python3 -m venv env
+   source env/bin/activate
+   pip install -r requirements.txt
+3. Вызвать в терминале `python3 src/main.py` или make serv
 
 
 ### Документация к API
-![Alt text](docs/github/openapi.png)
+![https://github.com/alikud/crud_python/blob/master/library_doc_screen.png]
