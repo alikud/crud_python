@@ -12,4 +12,4 @@
 
 
 ### Документация к API
-![https://github.com/alikud/crud_python/blob/master/library_doc_screen.png]
+![Документация к проекту](https://github.com/alikud/crud_python/blob/master/library_doc_screen.png)
